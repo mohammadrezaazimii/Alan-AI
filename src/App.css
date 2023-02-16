@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "IranianSans";
+  src: local("IranianSans"), url("./font/IranianSans.ttf") format("truetype");
+}
+#root,html,body{
+  height: 100vh;
+}
+body{
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "IranianSans" !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+.ui.list .list > .item .header,
+.ui.list > .item .header {
+  font-family: "IranianSans" !important;
+}
+.ui.list .list>.item .header, .ui.list>.item .header{
+  font-family: "IranianSans" !important;
+    
+}
+.font.container {
+  font-family: "IranianSans" !important;
+}

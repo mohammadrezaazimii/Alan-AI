@@ -1,0 +1,16 @@
+  .video-item{
+    display: flex !important;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header.font.title{
+    font-family: "IranianSans" !important;
+  }
+  .video-item.item img{
+    max-width: 180px;
+  }
+  .search-icon{
+    position: relative;
+    top: 0;
+    right: -1050px;
+  }

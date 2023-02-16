@@ -1,0 +1,19 @@
+.back{
+    width: 150px;
+    height: 140px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1565c0;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}

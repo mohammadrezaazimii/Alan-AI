@@ -1,0 +1,9 @@
+.circular-progress{
+    position: relative;
+    right: -75%;
+    top: 90%;
+}
+.ui.segment,.ui.header{
+    font-family: "IranianSans" !important;
+
+}
