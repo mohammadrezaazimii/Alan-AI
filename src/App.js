@@ -15,7 +15,6 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        mmdreza
         <NavbarComponent />
       </BrowserRouter>
     </div>
