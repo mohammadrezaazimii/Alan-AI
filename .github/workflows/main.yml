@@ -1,0 +1,35 @@
+name: React Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: safermehr.ir
+          username: azimi
+          port: 49150
+          key: ${{ secrets.PERSONAL_SSH_PRIVATE_KEY }}
+          script: |
+            echo "Changing to project directory..."
+            cd /home/azimi/domains/barsms.ir/public_html/
+
+            if [ -d ".git" ]; then
+              echo "Pulling latest changes from main..."
+              git pull origin main
+            else
+              echo "Cloning repository for the first time..."
+              git clone git@github.com:mohammadrezaazimii/Alan-AI.git .
+            fi
