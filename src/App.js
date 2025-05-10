@@ -15,8 +15,8 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+        test
         <NavbarComponent />
-        
       </BrowserRouter>
     </div>
   );
